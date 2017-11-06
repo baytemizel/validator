@@ -4,6 +4,7 @@ namespace Baytemizel\Validator\Exception;
 
 
 use Baytemizel\Validator\Service\Translator;
+use Throwable;
 
 class InvalidDataException extends \Exception
 {

@@ -8,7 +8,7 @@
 
 namespace Baytemizel\Validator\Response;
 
-
+use JMS\Serializer\Annotation as Serializer;
 use Baytemizel\Validator\Service\Translator;
 
 class ValidatorResponse
@@ -26,6 +26,7 @@ class ValidatorResponse
 
     /**
      * ValidatorResponse constructor.
+     *
      * @param string $code
      * @param array|null $result
      */
@@ -62,7 +63,7 @@ class ValidatorResponse
     }
 
     /**
-     * @param int $code
+     * @param string $code
      */
     public function setCode(string $code)
     {
